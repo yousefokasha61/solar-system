@@ -1,9 +1,8 @@
 {
-  "name": "Solar System",
-  "version": "6.7.6",
-  "author": "Siddharth Barahalikar <barahalikar.siddharth@gmail.com>",
-  "homepage": "https://www.linkedin.com/in/barahalikar-siddharth/",
-  "license": "MIT",
+  "name": "solar-system",
+  "version": "1.0.0",
+  "description": "A simple HTML+MongoDB+NodeJS project to display Solar System and it's planets.",
+  "main": "app-controller.js",
   "scripts": {
     "start": "node app.js",
     "test": "mocha app-test.js --timeout 10000 --reporter mocha-junit-reporter --exit",
@@ -21,8 +20,8 @@
     "nyc": "^15.1.0"
   },
   "devDependencies": {
-    "chai": "*",
-    "chai-http": "*",
+    "chai": "^4.3.7",
+    "chai-http": "^4.3.0",
     "mocha": "*"
   }
 }
