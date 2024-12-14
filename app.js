@@ -23,6 +23,7 @@ mongoose.connect(
       console.log("error!! " + err);
     } else {
       console.log("MongoDB Connection Successful");
+      console.log("Connected to database:", mongoose.connection.name);
     }
   }
 );
@@ -52,6 +53,7 @@ app.post("/planet", function (req, res) {
         );
         res.send("Error in Planet Data");
       } else {
+        console.log(planetData);
         res.send(planetData);
       }
     }
