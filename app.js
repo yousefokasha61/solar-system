@@ -11,10 +11,10 @@ app.use(express.static(path.join(__dirname, "/")));
 app.use(cors());
 
 mongoose.connect(
-  "mongodb+srv://yousefokasha61:lDHt4qOn1fikEgRL@cluster0.bkixm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+  process.env.MONGO_URI,
   {
-    user: "yousefokasha61",
-    pass: "lDHt4qOn1fikEgRL",
+    user: process.env.MONGO_USERNAME,
+    pass: process.env.MONGO_PASSWORD,
     useNewUrlParser: true,
     useUnifiedTopology: true,
   },
